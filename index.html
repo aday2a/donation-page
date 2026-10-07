@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تبرع الآن</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="page">
+
+        <div class="donation-card">
+
+            <div class="icon">❤</div>
+
+            <h1>تبرع الآن</h1>
+
+            <p class="subtitle">
+                مساهمتك تساعدنا وتُحدث فرقًا
+            </p>
+ 
+            <p class="story">
+    أنا شاب وأسعى لتوفير حياة أفضل لطفلتي، وتأمين احتياجاتها الأساسية
+    ومصاريف معيشتها. أي مساعدة، مهما كانت بسيطة، تعني لنا الكثير
+    وتساعدني على الاستمرار وتوفير ما تحتاجه.
+</p>
+            <div class="amounts">
+                <button data-amount="10">$10</button>
+                <button data-amount="25">$25</button>
+                <button data-amount="50">$50</button>
+                <button data-amount="100">$100</button>
+            </div>
+
+            <div class="input-group">
+                <label for="amount">مبلغ التبرع</label>
+
+                <div class="amount-input">
+                    <input
+                        type="number"
+                        id="amount"
+                        min="1"
+                        step="0.01"
+                        placeholder="أدخل المبلغ"
+                    >
+                    <span>USDT</span>
+                </div>
+            </div>
+
+            <div class="network">
+                <span>الشبكة</span>
+                <strong>TRON (TRC20)</strong>
+            </div>
+
+            <div class="wallet-section">
+                <label>عنوان التبرع TRC20</label>
+
+                <div class="wallet-box">
+                    <input
+                        type="text"
+                        id="walletAddress"
+                        value="TNKSP2rDXHovndDrLDccwqWiHmun5YQ9AK"
+                        readonly
+                    >
+
+                    <button id="copyButton">نسخ</button>
+                </div>
+
+                <small>
+                    تأكد من اختيار شبكة TRC20 عند إرسال USDT.
+                </small>
+            </div>
+
+            <button id="donateButton" class="donate-button">
+                تأكيد مبلغ التبرع
+            </button>
+
+            <a
+                class="whatsapp-button"
+                href="https://wa.me/970592826765"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                تواصل معنا عبر واتساب
+            </a>
+
+            <p id="message" class="message"></p>
+
+        </div>
+
+    </main>
+
+    <div id="toast" class="toast">
+        تم نسخ عنوان TRC20
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
